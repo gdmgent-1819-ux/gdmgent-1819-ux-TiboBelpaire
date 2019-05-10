@@ -3,11 +3,11 @@
   /**
    * Colour palette
    */
-  --c-primary: hsl(196, 51%, 62%);
-  --c-lightestblue: hsl(196, 10%, 100%);
-  --c-lightblue: hsl(196, 20%, 100%);
-  --c-brown: hsl(31, 40%, 70%);
-  --c-lightbrown: hsl(31, 20%, 100%);
+  --c-primary: hsl(196, 34%, 46%);
+  --c-lightestblue: hsl(197, 100%, 95%);
+  --c-lightblue: hsl(196, 100%, 90%);
+  --c-brown: hsl(31, 32%, 56%);
+  --c-lightbrown: hsl(31, 100%, 90%);
 
   /**
    * Layout
