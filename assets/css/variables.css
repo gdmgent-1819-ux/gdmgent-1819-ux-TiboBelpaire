@@ -17,8 +17,8 @@
   /**
    * Typography
    */
-  --t-primary: Arial, Helvetica, sans-serif;
-  --t-secondary: Arial, Helvetica, sans-serif;
+  --t-primary: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  --t-secondary: 'Bree Serif', serif;
   --t-tertiary: monospace;
 
   --t-headline: var(--t-primary);

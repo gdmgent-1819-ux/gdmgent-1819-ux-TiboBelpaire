@@ -7,6 +7,9 @@
 @import url('components/buttons.css');
 @import url('components/forms.css');
 
+body{
+    font-family: var(--t-primary);
+}
 .backgroundimage{
     background-image: url('../images/headerbackground.jpg');
     height: 33vh;
@@ -41,15 +44,60 @@ nav ul li a{
 	text-decoration: none;
 	color: var(--c-brown);
 }
-main section figure{
+main section{
+    margin: 2% 0;
+    padding-bottom: 2%;
+    border-bottom: 1px solid var(--c-primary);
+}
+main section img{
+    width: 26.65%;  
+}
+.card{
+    background-color: var(--c-lightbrown);
+    color: var(--c-brown);
     width: 30%;
+    text-align: center;
+    float: left;
+    margin: 0 8% 0 16%;
 }
-main section figure img{
-    width: 100%;
+.card h1{
+    padding: 0;
+    margin: 0;
+    font-family: var(--t-secondary);
+    color: var(--c-lightbrown);
+    background-color: var(--c-primary);
 }
-
-
-
-.footerbackground{
+.content{
+    padding: 2% 8%;
+}
+#longtext h1, #longtext h2, #longtext article{
+    width: 68%;
+    margin: 0 auto;
+    color: var(--c-brown);
+}
+#longtext h1, #longtext h2{
+    font-family: var(--t-secondary);
+}
+#longtext h1{
+    font-size: 4em;
+    line-height: 1.2em;
+}
+#longtext h2{
+    font-size: 1.8em;
+    line-height: 1.6em;
+}
+#longtext article{
+    line-height: 1.3em;
+}
+footer{
+    color: var(--c-lightbrown);
+    background-image: url('../images/headerbackground.jpg');
     height: 10vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 250px;
+}
+footer p{
+    padding: 2% 0 0 3%;
 }
