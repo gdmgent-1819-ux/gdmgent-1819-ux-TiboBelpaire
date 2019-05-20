@@ -34,15 +34,24 @@ nav ul{
     width: 70%;
     margin: 0 auto;
 }
+nav ul li:hover{
+    background-color: var(--c-brown);
+    color: var(--c-lightbrown);
+}
 nav ul li{
 	display: inline-block;
-	width: 18%;
+	width: 15%;
 	text-align: center;
 	padding: 1% 0;
 }
+
+nav ul li a:hover{
+    background-color: var(--c-brown);
+    color: var(--c-lightbrown);
+}
 nav ul li a{
 	text-decoration: none;
-	color: var(--c-brown);
+    color: var(--c-brown);
 }
 main section{
     margin: 2% 0;
@@ -92,7 +101,7 @@ main section img{
 footer{
     color: var(--c-lightbrown);
     background-image: url('../images/headerbackground.jpg');
-    height: 10vh;
+    height: 12vh;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -100,4 +109,8 @@ footer{
 }
 footer p{
     padding: 2% 0 0 3%;
+}
+
+@media only screen and (max-width: 600px) {
+
 }
