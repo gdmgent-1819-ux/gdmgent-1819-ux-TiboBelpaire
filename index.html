@@ -1,63 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="een website voor een restaurant met als belangrijkste doelgroep jongeren (18 - 24 jaar).">
-        <meta name="keywords" content="HTML,CSS,XML,JavaScript,Burgers,Restaurant">
-        <meta name="author" content="Tibo Belpaire">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <link rel="icon" href="assets/images/favicon.gif" type="image/gif" sizes="16x16">
-        <title>Burgershop Gent | Homepage</title>
-        <link rel="stylesheet" href="assets/css/main.css">
-        <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
-    </head>
-    <body>
-        <div class="backgroundimage"></div>
-        <header>
-            <figure>
-                <img src="assets/images/logo.png" alt="Logo van Burgershop">
-            </figure>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Take away/Delivery</a></li>
-                <li><a href="#">Reservatie</a></li>
-                <li><a href="#">Foto's</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <main>
-            <section>
-                <div class="card">
-                    <h1>FEELING BURGERS?</h1>
-                    <div class="content">
-                        <h3>TRY OUR FRESH, HOMEMADE & KICK-ASS
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+        content="een website voor een restaurant met als belangrijkste doelgroep jongeren (18 - 24 jaar).">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript,Burgers,Restaurant">
+    <meta name="author" content="Tibo Belpaire">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="assets/images/favicon.gif" type="image/gif" sizes="16x16">
+    <title>Burgershop Gent | Homepage</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="backgroundimage"></div>
+    <header>
+        <figure>
+            <img src="assets/images/logo.png" alt="Logo van Burgershop">
+        </figure>
+    </header>
+    <nav class="topnav">
+        <a href="#" class="active"></a>
+        <div id="myLinks">
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#">Take Away/Delivery</a>
+            <a href="#">Reservatie</a>
+            <a href="#">Foto's</a>
+            <a href="#">Contact</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+    <main>
+        <section>
+            <div class="card">
+                <h1>FEELING BURGERS?</h1>
+                <div class="content">
+                    <h3>TRY OUR FRESH, HOMEMADE & KICK-ASS
                         HAMBURGERS</h3>
-                        <p>ma – vrij: 11u00 – 14u00 & 17u00 – 21u30
+                    <p>ma – vrij: 11u00 – 14u00 & 17u00 – 21u30
                         za & zo: gesloten
                         Feestdagen (uitgezonderd za & zo): 17u – 21u30</p>
-                        <p>Sint- Pietersnieuwstraat 130-134, 9000 Gent
+                    <p>Sint- Pietersnieuwstraat 130-134, 9000 Gent
                         T: 09 139 09 45 – E: info@burgershopgent.be</p>
-                    </div>
                 </div>
-                    <img src="assets/images/burger.jpg" alt="Foto van een hamburger">
+            </div>
+            <img src="assets/images/burger.jpg" alt="Foto van een hamburger">
 
-            </section>
-            <section id="longtext">
-                <h1>Fresh Food Boutique & Take Away</h1>
-                <h2>ORIGIONAL - DELICIOUS - FRESH - ROCK&ROLL</h2>
-                <article>Een sfeervolle zaak met heerlijke verse hamburgers. Deze worden dagelijks bereid met verse ingrediënten en huisgemaakte
-                    sauzen. Elke burger bij Burgershop Gent is uniek. Proef zeker eens onze verse handgesneden frieten. Vegetarisch? No biggie,
-                    ook jij eet er je buikje van rond met ons uitgebreid aanbod.
-                </article>
-            </section>
-        </main>
-        <footer>
-            <p>&copy;2019 - Alle rechten behouden<br>
+        </section>
+        <section id="longtext">
+            <h1>Fresh Food Boutique & Take Away</h1>
+            <h2>ORIGIONAL - DELICIOUS - FRESH - ROCK&ROLL</h2>
+            <article>Een sfeervolle zaak met heerlijke verse hamburgers. Deze worden dagelijks bereid met verse
+                ingrediënten en huisgemaakte
+                sauzen. Elke burger bij Burgershop Gent is uniek. Proef zeker eens onze verse handgesneden frieten.
+                Vegetarisch? No biggie,
+                ook jij eet er je buikje van rond met ons uitgebreid aanbod.
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;2019 - Alle rechten behouden<br>
             Tibo Belpaire - Artevelde Hogeschool</p>
-        </footer>
-    </body>
+    </footer>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
 </html>

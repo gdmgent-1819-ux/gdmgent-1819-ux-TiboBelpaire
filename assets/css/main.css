@@ -7,10 +7,11 @@
 @import url('components/buttons.css');
 @import url('components/forms.css');
 
-body{
+body {
     font-family: var(--t-primary);
 }
-.backgroundimage{
+
+.backgroundimage {
     background-image: url('../images/headerbackground.jpg');
     height: 33vh;
     background-attachment: fixed;
@@ -18,50 +19,58 @@ body{
     background-repeat: no-repeat;
     background-position: center -350px;
 }
-header figure{
+
+header figure {
     width: 15%;
     position: absolute;
     top: 0;
     left: 0;
 }
-header figure img{
+
+header figure img {
     width: 100%;
 }
-nav{
+
+nav {
+    overflow: hidden;
     background-color: var(--c-lightbrown);
+    position: relative;
 }
-nav ul{
-    width: 70%;
+nav #myLinks{
     margin: 0 auto;
+    width: 70%;
 }
-nav ul li:hover{
-    background-color: var(--c-brown);
-    color: var(--c-lightbrown);
+nav a {
+    color: var(--c-brown);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.1em;
+    display: inline-block;
+    margin: 0 2.7%;
 }
-nav ul li{
-	display: inline-block;
-	width: 15%;
-	text-align: center;
-	padding: 1% 0;
+nav .active{
+    display: none;
+}
+nav a.icon {
+    display: none;
 }
 
-nav ul li a:hover{
+nav a:hover {
     background-color: var(--c-brown);
     color: var(--c-lightbrown);
 }
-nav ul li a{
-	text-decoration: none;
-    color: var(--c-brown);
-}
-main section{
+
+main section {
     margin: 2% 0;
     padding-bottom: 2%;
     border-bottom: 1px solid var(--c-primary);
 }
-main section img{
-    width: 26.65%;  
+
+main section img {
+    width: 26.65%;
 }
-.card{
+
+.card {
     background-color: var(--c-lightbrown);
     color: var(--c-brown);
     width: 30%;
@@ -69,36 +78,47 @@ main section img{
     float: left;
     margin: 0 8% 0 16%;
 }
-.card h1{
+
+.card h1 {
     padding: 0;
     margin: 0;
     font-family: var(--t-secondary);
     color: var(--c-lightbrown);
     background-color: var(--c-primary);
 }
-.content{
+
+.content {
     padding: 2% 8%;
 }
-#longtext h1, #longtext h2, #longtext article{
+
+#longtext h1,
+#longtext h2,
+#longtext article {
     width: 68%;
     margin: 0 auto;
     color: var(--c-brown);
 }
-#longtext h1, #longtext h2{
+
+#longtext h1,
+#longtext h2 {
     font-family: var(--t-secondary);
 }
-#longtext h1{
+
+#longtext h1 {
     font-size: 4em;
     line-height: 1.2em;
 }
-#longtext h2{
+
+#longtext h2 {
     font-size: 1.8em;
     line-height: 1.6em;
 }
-#longtext article{
+
+#longtext article {
     line-height: 1.3em;
 }
-footer{
+
+footer {
     color: var(--c-lightbrown);
     background-image: url('../images/headerbackground.jpg');
     height: 12vh;
@@ -107,10 +127,47 @@ footer{
     background-repeat: no-repeat;
     background-position: center 250px;
 }
-footer p{
+
+footer p {
     padding: 2% 0 0 3%;
 }
 
 @media only screen and (max-width: 600px) {
+    .backgroundimage {
+        height: 15vh;
+    }
 
+    nav {
+        overflow: hidden;
+        background-color: var(--c-lightbrown);
+        position: relative;
+    }
+
+    nav #myLinks {
+        display: none;
+        width: 100%;
+    }
+
+    nav a {
+        color: var(--c-brown);
+        padding: 14px 16px 30px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        display: block;
+        margin: 0;
+    }
+    nav .active{
+        display: block;
+    }
+    nav a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    nav a:hover {
+        background-color: var(--c-brown);
+        color: var(--c-lightbrown);
+    }
 }
